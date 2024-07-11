@@ -8,34 +8,31 @@
 }
 
 .topnav {
-   background-color: #ffffff;
    overflow: hidden;
-   height: 2rem;
-   /* position: fixed; */
-   top: 0;
-   width: 100%;
+   height: 2.8em;
  }
 
  .topnav a {
-  float: right;
-    
+   float: right;
    color: #4f4f4f;
-   text-align: center;
-   /* padding: auto ;  */
-   margin: 25rem 1rem 25rem;
-
+   margin: auto .8rem ;
    text-decoration: dotted;
-   font-size: 2px;
    font-family: Helvetica, sans-serif;
-   margin-top: 3px; 
+   margin-top: .4em; 
 }
 
 .topnav a:hover {
-  /* background-color: #aaaeb9; */
-  color: rgb(56, 132, 255);
-  border-radius: 3px;
+  color: rgb(0, 98, 255);
 }
 
+.register{
+   padding : .4rem;
+   background-color: black;
+   border-radius: 5px;
+   color: rgba(255, 255, 255, 0.745) !important;
+   text-align: center;
+   margin-bottom: 70%;
+}
 /* .topnav a.split {
 float: right;
 background-color: #d97a7a;
