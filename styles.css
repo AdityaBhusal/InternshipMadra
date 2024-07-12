@@ -1,77 +1,92 @@
-*
-{
-   margin: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+* {
+  margin: 0px;
 }
 
-.logo{
- float: left;
+.logo {
+  float: left;
 }
 
 .topnav {
-   overflow: hidden;
-   height: 2.8em;
- }
+  overflow: hidden;
+  height: 3em;
+}
 
- .topnav a {
-   float: right;
-   color: #4f4f4f;
-   margin: auto .8rem ;
-   text-decoration: dotted;
-   font-family: Helvetica, sans-serif;
-   margin-top: .4em; 
+.topnav a {
+  float: right;
+  color: #000000;
+  margin: auto 0.8rem;
+  text-decoration: dotted;
+  font-family: "Arimo" ;
+  margin-top: 0.75em;
+  /* font-size: small;  */
 }
 
 .topnav a:hover {
-  color: rgb(0, 98, 255);
+  color: #397231;
+  transition: 150ms;
+  cursor:pointer;
 }
 
-.register{
-   padding : .4rem;
-   background-color: black;
-   border-radius: 5px;
-   color: rgba(255, 255, 255, 0.745) !important;
-   text-align: center;
-   margin-bottom: 70%;
+/* register button styling */
+.register {
+  float: right;
+  margin-top: 0.4rem;
+  background-color: #A5CD3E;
+  border: none;
+  border-radius: 8px;
+  margin-left: 1.52rem;
+  margin-right: 2rem;
+  height: 2.2rem;
+  padding: 0 15px;
+  color:rgba(0, 0, 0, 0.717);
+  cursor:pointer;
+
 }
-/* .topnav a.split {
-float: right;
-background-color: #d97a7a;
-/* color: rgb(92, 92, 92); */
-/* margin-top: 3px;
-border-radius: 3px;
-} */ 
 
 
-body, html {
-height: 100%;
+.register:hover {
+  background-color: #397231;
+  color:white;
+
+}
+
+body,
+html {
+  height: 100%;
 }
 
 /* The hero image */
 .hero-image {
-/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTa6efHABeat3Y9stVOZOMMG0unrc81xxieZCyOn1NcQwsNwKg8Riz2z4Uy92u7JX16ThX60PuyqMmVGuNdPC9ZO8cZ01zSNNviuF1sNg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTa6efHABeat3Y9stVOZOMMG0unrc81xxieZCyOn1NcQwsNwKg8Riz2z4Uy92u7JX16ThX60PuyqMmVGuNdPC9ZO8cZ01zSNNviuF1sNg");
 
-/* Set a specific height */
-height: 100%;
-width: 100%;
-margin: 0px;
-padding: 0px  ;
+  /* Set a specific height */
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 
-/* Position and center the image to scale nicely on all screens */
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
-
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* //text in the middle of the hero card */
 .hero-text {
-text-align: center;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
+.madra {
+  margin-left: 2em;
+  width: 2.8em;
+  height: 3em;
+}
