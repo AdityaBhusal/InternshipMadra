@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./image/ConferenceLogo.png" type="image/icon type" />
+  </head>
+  <body>
+    <!-- navbar goes here  -->
+
+    <div class="topnav flex p-2">
+      <!-- put logo here asap -->
+      <a href="./index.html">
+        <img
+          src="./image/ConferenceLogo.png"
+          class="w-20 aspect-square rounded-full"
+        />
+      </a>
+
+      <!-- right side of the navbar -->
+
+      <div class="ml-auto flex">
+        <a
+          class="links mx-4 text-lg self-center hover:text-lime-700"
+          href="./committees.html"
+          >Committees</a
+        >
+        <a
+          class="links mx-4 text-lg self-center hover:text-lime-700"
+          href="./schedule.html"
+          >Schedule</a
+        >
+        <a
+          class="links mx-4 text-lg self-center hover:text-lime-700"
+          href="./venue.html"
+          >Venue</a
+        >
+        <a
+          class="links mx-4 text-lg self-center hover:text-lime-700"
+          href="./speakers.html"
+          >Speakers</a
+        >
+        <a
+          class="links mx-4 text-lg self-center hover:text-lime-700"
+          href="./downloads.html"
+          >Downloads</a
+        >
+        <a
+          class="links mx-1 text-lg self-center hover:text-lime-700"
+          href="./contacts.html"
+          >Contact</a
+        >
+        <a href="/registration.html" class="mr-1 ml-4 self-center">
+          <button
+            class="bg-lime-600 mr-1 ml-4 hover:scale-110 active:scale-100 self-center h-11 hover:bg-lime-700 text-white duration-150 font-bold py-2 px-4 rounded-full"
+          >
+            Register Here
+          </button>
+        </a>
+
+        <a href="/callForPaper.html" class="ml-1 self-center">
+          <button
+            class="bg-blue-500 hover:scale-110 active:scale-100 hover:bg-blue-700 self-center h-11 text-white duration-150 font-bold py-2 px-4 rounded-full"
+          >
+            Call for paper
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="hero-image text-white h-80 w-full flex flex-col justify-center items-center"
+    >
+      <span class="font-bold text-4xl tracking-wide">Contacts</span>
+      <br />
+      <span class="text-l"
+        >You are here :
+        <a href="/" class="underline hover:text-lime-500">Home</a> >
+        <a href="/contacts.html" class="underline hover:text-lime-500"
+          >Contacts</a
+        ></span
+      >
+    </div>
+
+    <div class="contact-form">
+      <section class="bg-white">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900"
+          >
+            Contact Us
+          </h2>
+          <p
+            class="mb-8 lg:mb-16 font-light text-center text-gray-900 sm:text-xl"
+          >
+            Got a technical issue? Want to send feedback about a website
+            feature? Need details about our event plan? Let us know.
+          </p>
+          <form
+            action="#"
+            class="space-y-8"
+            onsubmit="sendEmail(); reset(); return false;"
+          >
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900"
+                >Your email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="name@flowbite.com"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="subject"
+                class="block mb-2 text-sm font-medium text-gray-900"
+                >Subject</label
+              >
+              <input
+                type="text"
+                id="subject"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                placeholder="Let us know how we can help you"
+                required
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-gray-900"
+                >Your message</label
+              >
+              <textarea
+                id="message"
+                rows="6"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                placeholder="Leave a comment..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-blue-500 hover:scale-110 active:scale-100 hover:bg-blue-700 self-center h-11 text-white duration-150 font-bold py-2 px-4 rounded-full"
+            >
+              Summit
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer
+      class="bg-gray-800 flex flex-col align-middle justify-center text-white"
+    >
+      <div class="text-slate-50 mt-5 justify-evenly flex">
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </div>
+      <div
+        class="bg-gray-900 container flex justify-between items-center min-w-full px-4 mt-5"
+      >
+        <p class="text-center text-sm">
+          @Digital Coneference-2024, All Rights Reserved
+        </p>
+        <div class="bg-gray-900 flex space-x-4">
+          <a href="#" class="text-white hover:text-gray-400">
+            <i class="fab fa-facebook-f hover:text-[#116BFF]"></i>
+          </a>
+          <a href="#" class="text-white hover:text-gray-400">
+            <i class="fab fa-twitter hover:text-[#116BFF]"></i>
+          </a>
+          <a href="#" class="text-white hover:text-gray-400">
+            <i class="fab fa-google-plus-g hover:text-[#EA483B]"></i>
+          </a>
+          <a href="#" class="text-white hover:text-[#FF0909]">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "sharmanawadit@gmail.com",
+          Password: "20600110!Npss",
+          To: "nawaditpaudelsharma@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: document.getElementById("subject").value,
+          Body:
+            "Email: " +
+            document.getElementById("email").value +
+            "<br> Message: " +
+            document.getElementById("message"),
+        }).then((message) => alert("Message Sent"));
+      }
+    </script>
+  </body>
+</html>
