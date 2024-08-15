@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-image {
+  background-image: linear-gradient(rgba(09, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://thealtruistictraveller.com/wp-content/uploads/2023/05/raimond-klavins-n0RIwkDfJ1g-unsplash-1.jpg");
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
