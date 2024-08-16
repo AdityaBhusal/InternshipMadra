@@ -1,101 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsive Website</title>
+
+    <!-- styling and script -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- icon head in tab  -->
     <link rel="icon" href="./image/ConferenceLogo.png" type="image/icon type">
-    
 
+    <!-- fontawesome cdn for icons -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+    />
   </head>
-  <body>
-    <!-- navbar goes here  -->
+</head>
 
-    <div class="topnav flex p-2">
-      <!-- put logo here asap -->
-     <a href="/">
-      <img  src="./image/conferenceLogo.png" class="w-20 aspect-square rounded-full" />
-    </a>      
+<body >
+        <!-- Script for Menu Toggle -->
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('nav-links');
+                const menuIcon = document.getElementById('menu-icon');
+      
+                // Toggle the menu visibility
+                navLinks.classList.toggle('top-[9%]');
+      
+                // Toggle the menu icon (hamburger/cross)
+                if (navLinks.classList.contains('top-[9%]')) {
+                    menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+                } else {
+                    menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>';
+                }
+            }
+        </script>
+    <!-- Navbar -->
+    <header class="bg-white">
+        <nav class="flex justify-between mx-auto p-2 md:w-full ">
+            <!-- Logo -->
+            <a href="/">
+                <img src="./image/ConferenceLogo.png" class="w-16 rounded-full cursor-pointer" alt="Conference Logo">
+            </a>
 
-      <!-- right side of the navbar -->
+            <!-- Nav Links -->
+            <div id="nav-links" class="nav-links duration-150 mt-[1.5rem] md:static md:mt-0 absolute bg-white md:left-auto left-0 top-[-100%] w-full flex md:mr-0 px-5 md:w-full md:ml-30 ">
+                <ul class="flex gap-8 my-3 flex-col items-center md:justify-center md:flex-row  md:mx-8 ">
+                    <li><a class="hover:text-gray-500 mt-0" href="./committees.html">Committees</a></li>
+                    <li><a class="hover:text-gray-500" href="./schedule.html">Schedule</a></li>
+                    <li><a class="hover:text-gray-500" href="./venue.html">Venue</a></li>
+                    <li><a class="hover:text-gray-500" href="./speakers.html">Speakers</a></li>
+                    <li><a class="hover:text-gray-500" href="./downloads.html">Downloads</a></li>
+                    <li><a class="hover:text-gray-500" href="./contacts.html">Contact</a></li>
+                </ul>
+                
+                <div class="flex flex-col md:flex-row gap-4 ml-auto md:h-12  md:mt-1.5">
+                  <button class="bg-lime-600 hover:bg-lime-700  text-white font-bold py-2 px-4 rounded-full  ">
+                      Register Here
+                  </button>
+                  <button class="bg-blue-500 hover:bg-blue-700  text-white font-bold py-2 px-4 rounded-full">
+                      Call for Paper
+                  </button>
+              </div>
+                </div>
+            </div>
 
-      <div class="ml-auto flex">
-        <a class="links mx-4 text-lg self-center hover:text-lime-700"  href="./committees.html">Committees</a>
-        <a class="links mx-4 text-lg self-center hover:text-lime-700" href="./schedule.html">Schedule</a>
-        <a class="links mx-4 text-lg self-center hover:text-lime-700" href="./venue.html">Venue</a>
-        <a class="links mx-4 text-lg self-center hover:text-lime-700" href="./speakers.html">Speakers</a>
-        <a class="links mx-4 text-lg self-center hover:text-lime-700" href="./downloads.html">Downloads</a>
-        <a class="links mx-1 text-lg self-center hover:text-lime-700" href="./contacts.html">Contact</a>
-       
-        <a href="/registration.html" class="mr-1 ml-4 self-center">
-          <button
-          class="bg-lime-600 mr-1 ml-4 self-center h-11 hover:bg-lime-700 text-white duration-150 font-bold py-2 px-4 rounded-full">Register Here
-        </button>
-        </a>
+            <!-- Menu Button for Mobile -->
+            <button id="menu-button" class="ml-auto md:hidden p-2 focus:outline-none" onclick="toggleMenu()">
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
 
-        <a href="/callForPaper.html" class=" ml-1 self-center">
-          <button class="bg-blue-500 hover:bg-blue-700 self-center h-11 text-white duration-150 font-bold py-2 px-4 rounded-full">
-          Call for paper
-        </button>
-        </a>
+    <!-- Title Card -->
+    <div
+    class="hero-image text-white h-80 w-full flex flex-col justify-center items-center"
+  >
+    <span class="font-bold text-4xl tracking-wide">Contacts</span>
+    <br />
+    <span class="text-l"
+      >You are here :
+      <a href="/" class="underline hover:text-lime-500">Home</a> >
+      <a href="/contacts.html" class="underline hover:text-lime-500"
+        >Contacts</a
+      ></span
+    >
+  </div>
+  <!-- Icons (Example) -->
+    <div class="flex justify-center space-x-6 py-8">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21c-1.042-.434-9-5.88-9-13.201 0-2.777 2.22-5 4.971-5 1.852 0 3.637 1.014 4.571 2.614C13.392 3.813 15.177 2.799 17.029 2.799 19.78 2.799 22 5.022 22 7.799c0 7.321-7.958 12.767-9 13.201z"></path>
+        </svg>
 
-      </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21c-1.042-.434-9-5.88-9-13.201 0-2.777 2.22-5 4.971-5 1.852 0 3.637 1.014 4.571 2.614C13.392 3.813 15.177 2.799 17.029 2.799 19.78 2.799 22 5.022 22 7.799c0 7.321-7.958 12.767-9 13.201z"></path>
+            <line x1="12" y1="8" x2="12" y2="16"></line>
+            <line x1="8" y1="12" x2="16" y2="12"></line>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21c-1.042-.434-9-5.88-9-13.201 0-2.777 2.22-5 4.971-5 1.852 0 3.637 1.014 4.571 2.614C13.392 3.813 15.177 2.799 17.029 2.799 19.78 2.799 22 5.022 22 7.799c0 7.321-7.958 12.767-9 13.201z"></path>
+            <line x1="9.5" y1="5.5" x2="9.5" y2="9.5"></line>
+            <line x1="7.5" y1="7.5" x2="11.5" y2="7.5"></line>
+        </svg>
     </div>
-
-    <!-- navbar ends here  -->
-
-
-    <!-- title card starts here -->
-    <div class="hero-image text-white h-80 w-full flex flex-col justify-center items-center">
-        <span class="font-bold text-4xl ">Template</span>
-        <br>
-        <span class="text-l">You are here     : <a href="/" class="underline hover:text-lime-500">Home</a> > <a href="/template.html" class="underline hover:text-lime-500">Template</a></span>
-    </div>
-      <!-- title card ends here -->
+Lorem ipsum dolor sit amet consectetur a
+LOREM Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, sit nobis fugiat repellat illum exercitationem reprehenderit quibusdam obcaecati impedit id aliquam, consequuntur ab omnis, error commodi dolorum quae laborum ratione. dipisicing elit. Quam, aliquam. Exercitationem totam delectus error iste laudantium beatae. Odit velit dicta illo reiciendis repudiandae animi atque vel repellendus dolores, exercitationem obcaecati.
 
 
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 21c-1.042-.434-9-5.88-9-13.201 0-2.777 2.22-5 4.971-5 1.852 0 3.637 1.014 4.571 2.614C13.392 3.813 15.177 2.799 17.029 2.799 19.78 2.799 22 5.022 22 7.799c0 7.321-7.958 12.767-9 13.201z"></path>
-      </svg>
-      
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque doloribus sapiente quidem consequuntur est similique ad adipisci aliquid. Accusamus, doloremque. Harum facilis labore ullam eos laudantium consequuntur natus, eaque ab?
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi consequatur minus sint tenetur earum corrupti id repellendus, blanditiis nam odit repudiandae labore dolores dolor atque vel? Quam magni reprehenderit sit.
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 21c-1.042-.434-9-5.88-9-13.201 0-2.777 2.22-5 4.971-5 1.852 0 3.637 1.014 4.571 2.614C13.392 3.813 15.177 2.799 17.029 2.799 19.78 2.799 22 5.022 22 7.799c0 7.321-7.958 12.767-9 13.201z"></path>
-        <line x1="12" y1="8" x2="12" y2="16"></line>
-        <line x1="8" y1="12" x2="16" y2="12"></line>
-      </svg>
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 21c-1.042-.434-9-5.88-9-13.201 0-2.777 2.22-5 4.971-5 1.852 0 3.637 1.014 4.571 2.614C13.392 3.813 15.177 2.799 17.029 2.799 19.78 2.799 22 5.022 22 7.799c0 7.321-7.958 12.767-9 13.201z"></path>
-        <line x1="9.5" y1="5.5" x2="9.5" y2="9.5"></line>
-        <line x1="7.5" y1="7.5" x2="11.5" y2="7.5"></line>
-      </svg>
-      
-      
-
-    <!-- footer starts here  -->
-    <footer class="bg-gray-900 text-white py-4 ">
-        <div class="container mx-auto flex justify-between items-center">              
-            <p class="text-center text-sm">@Digital Conference-2024,<br>
-                 All Rights Reserved</p>
+LOREM
+<!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <p class="text-center text-sm">@Digital Conference-2024,<br> All Rights Reserved</p>
             <div class="flex space-x-4">
-                <a href="#" class="text-white hover:text-gray-400">
-                    <i class="fab fa-facebook-f hover:text-[#116BFF]"></i>
-                </a>
-                <a href="#" class="text-white hover:text-gray-400">
-                    <i class="fab fa-twitter hover:text-[#116BFF]"></i>
-                </a>
-                <a href="#" class="text-white hover:text-gray-400">
-                    <i class="fab fa-google-plus-g hover:text-[#EA483B]"></i>
-                </a>
-                <a href="#" class="text-white hover:text-[#FF0909]">
-                    <i class="fab fa-youtube"></i>
-                </a>
+                <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-facebook-f hover:text-[#116BFF]"></i></a>
+                <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-twitter hover:text-[#116BFF]"></i></a>
+                <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-google-plus-g hover:text-[#EA483B]"></i></a>
+                <a href="#" class="text-white hover:text-[#FF0909]"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-    </footer> 
+    </footer>
+
 </body>
+
 </html>
