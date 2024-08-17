@@ -1,88 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nepal Digital Economy Summit 2024</title>
 
-   <!-- styling and script -->
-   <script src="https://cdn.tailwindcss.com"></script>
-   <link rel="stylesheet" href="./style.css" />
-   
-   <!-- icon head in tab  -->
-   <link rel="icon" href="./image/ConferenceLogo.png" type="image/icon type">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsive Website</title>
+
+    <!-- styling and script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- icon head in tab  -->
+    <link rel="icon" href="./image/ConferenceLogo.png" type="image/icon type">
 
     <!-- fontawesome cdn for icons -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="topnav flex p-2">
-      <a href="./index.html">
-        <img
-          src="./image/ConferenceLogo.png"
-          class="w-20 aspect-square rounded-full"
-        />
-      </a>
+</head>
 
-      <!-- right side of the navbar -->
+<body >
+        <!-- Script for Menu Toggle -->
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('nav-links');
+                const menuIcon = document.getElementById('menu-icon');
+      
+                // Toggle the menu visibility
+                navLinks.classList.toggle('top-[100%]');
+      
+                // Toggle the menu icon (hamburger/cross)
+                if (navLinks.classList.contains('top-[100%]')) {
+                    menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+                } else {
+                    menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>';
+                }
+            }
+        </script>
+    <!-- Navbar -->
+    <header class="bg-white z-0 relative">
+        <nav class="flex justify-between mx-auto p-2 md:w-full ">
+            <!-- Logo -->
+            <a href="/">
+                <img src="./image/ConferenceLogo.png" class="w-16 rounded-full cursor-pointer" alt="Conference Logo">
+            </a>
 
-      <div class="ml-auto flex">
-        <a
-          class="links mx-4 text-lg self-center hover:text-lime-700"
-          href="./committees.html"
-          >Committees</a
-        >
-        <a
-          class="links mx-4 text-lg self-center hover:text-lime-700"
-          href="./schedule.html"
-          >Schedule</a
-        >
-        <a
-          class="links mx-4 text-lg self-center hover:text-lime-700"
-          href="./venue.html"
-          >Venue</a
-        >
-        <a
-          class="links mx-4 text-lg self-center hover:text-lime-700"
-          href="./speakers.html"
-          >Speakers</a
-        >
-        <a
-          class="links mx-4 text-lg self-center hover:text-lime-700"
-          href="./downloads.html"
-          >Downloads</a
-        >
-        <a
-          class="links mx-1 text-lg self-center hover:text-lime-700"
-          href="./contacts.html"
-          >Contact</a
-        >
+            <!-- Nav Links -->
+            <div id="nav-links" class="nav-links duration-200 -z-40 md:z-auto md:static  absolute bg-white md:left-auto left-0 top-[-10000%] w-full md:w-auto flex md:mr-0 px-5 md:ml-30 ">
+                <ul class="ml-5 flex gap-8 my-3 flex-col items-center  md:flex-row  md:mx-8 md:text-justify">
+                    <li><a class="hover:text-green-500 mt-0 " href="./committees.html">Committees</a></li>
+                    <li><a class="hover:text-green-500" href="./schedule.html">Schedule</a></li>
+                    <li><a class="hover:text-green-500" href="./venue.html">Venue</a></li>
+                    <li><a class="hover:text-green-500" href="./speakers.html">Speakers</a></li>
+                    <li><a class="hover:text-green-500" href="./downloads.html">Downloads</a></li>
+                    <li><a class="hover:text-green-600" href="./contacts.html">Contact</a></li>
+                </ul>
+                
+                <div class="my-3 flex flex-col md:flex-row gap-4 ml-auto md:h-12 md:pt-1 ">
+                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoOxKVgm8cIjIombUdAD6IR61xQkY-3rtIToHApriWyfYKhQ/viewform?usp=pp_url" target="_blank">
+                     <button class="bg-lime-600  hover:bg-lime-700 duration-100  text-white font-bold py-2 px-4 rounded-full  ">
+                      Register Here
+                    </button>
+                    
+                  </button>
+                </a>
 
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdoOxKVgm8cIjIombUdAD6IR61xQkY-3rtIToHApriWyfYKhQ/viewform?usp=pp_url"
-          class="mr-1 ml-4 self-center"
-        >
-          <button
-            class="bg-lime-600 hover:scale-110 active:scale-100 mr-1 ml-4 self-center h-11 hover:bg-lime-700 text-white duration-150 font-bold py-2 px-4 rounded-full"
-          >
-            Register Here
-          </button>
-        </a>
+                <a href="./callForPaper.html">
+                    <button class="bg-blue-500 hover:bg-blue-700 duration-100 text-white font-bold py-2 px-4 rounded-full">
+                        Call for Paper
+                    </button>
+                </a>
+                  
+              </div>
+                </div>
+            </div>
 
-        <a href="/callForPaper.html" class="ml-1 self-center">
-          <button
-            class="bg-blue-500 hover:scale-110 active:scale-100 hover:bg-blue-700 self-center h-11 text-white duration-150 font-bold py-2 px-4 rounded-full"
-          >
-            Call for paper
-          </button>
-        </a>
-      </div>
-    </div>
-
-    <!-- navbar ends here  -->
+            <!-- Menu Button for Mobile -->
+            <button id="menu-button" class="ml-auto md:hidden p-2 focus:outline-none" onclick="toggleMenu()">
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
 
     <div
       class="hero-image h-screen w-full flex justify-center items-center flex-column gap-12"
