@@ -29,10 +29,10 @@
                 const menuIcon = document.getElementById('menu-icon');
       
                 // Toggle the menu visibility
-                navLinks.classList.toggle('top-[8.5%]');
+                navLinks.classList.toggle('top-[100%]');
       
                 // Toggle the menu icon (hamburger/cross)
-                if (navLinks.classList.contains('top-[8.5%]')) {
+                if (navLinks.classList.contains('top-[100%]')) {
                     menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
                 } else {
                     menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>';
@@ -40,7 +40,7 @@
             }
         </script>
     <!-- Navbar -->
-    <header class="bg-white">
+    <header class="bg-white z-0 relative">
         <nav class="flex justify-between mx-auto p-2 md:w-full ">
             <!-- Logo -->
             <a href="/">
@@ -48,8 +48,8 @@
             </a>
 
             <!-- Nav Links -->
-            <div id="nav-links" class="nav-links duration-150  md:static md:mt-0 absolute bg-white md:left-auto left-0 top-[-100%] w-full md:w-auto flex md:mr-0 px-5 md:ml-30 ">
-                <ul class="flex gap-8 my-3 flex-col items-center md:justify-center md:flex-row  md:mx-8 ">
+            <div id="nav-links" class="nav-links duration-150 -z-40 md:static md:mt-0 absolute bg-white md:left-auto left-0 top-[-10000%] w-full md:w-auto flex md:mr-0 px-5 md:ml-30 ">
+                <ul class="ml-7 flex gap-8 my-3 flex-col items-center md:justify-center md:flex-row  md:mx-8 ">
                     <li><a class="hover:text-gray-500 mt-0" href="./committees.html">Committees</a></li>
                     <li><a class="hover:text-gray-500" href="./schedule.html">Schedule</a></li>
                     <li><a class="hover:text-gray-500" href="./venue.html">Venue</a></li>
@@ -58,7 +58,7 @@
                     <li><a class="hover:text-gray-500" href="./contacts.html">Contact</a></li>
                 </ul>
                 
-                <div class="flex flex-col md:flex-row gap-4 ml-auto md:h-12  md:mt-1.5">
+                <div class="my-3 flex flex-col md:flex-row gap-4 ml-auto md:h-12  md:mt-1.5 ">
                   <button class="bg-lime-600 hover:bg-lime-700  text-white font-bold py-2 px-4 rounded-full  ">
                       Register Here
                   </button>
@@ -80,7 +80,7 @@
 
     <!-- Title Card -->
     <div
-    class="hero-image text-white h-80 w-full flex flex-col justify-center items-center"
+    class="hero-image text-white  h-80 w-full flex flex-col justify-center items-center"
   >
     <span class="font-bold text-4xl tracking-wide">Contacts</span>
     <br />
