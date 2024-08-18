@@ -1,4 +1,8 @@
 .hero-image {
-  background-image: linear-gradient(rgba(09, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(#0000004a, rgba(0, 0, 0, 0.28)),
     url("https://thealtruistictraveller.com/wp-content/uploads/2023/05/raimond-klavins-n0RIwkDfJ1g-unsplash-1.jpg");
 }
+
+/* span.font-bold.text4xl {
+  text-shadow: white 1px 1px 1px; 
+} */
