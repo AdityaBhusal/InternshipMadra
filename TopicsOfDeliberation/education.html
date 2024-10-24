@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepal Digital Economic Summit</title>
+
+    <!-- styling and script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- icon head in tab  -->
+    <link rel="icon" href="/image/nepal digital economic summit.webp" class="rounded-full" type="image/icon type">
+
+    <!-- fontawesome cdn for icons -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+    />
+  </head>
+</head>
+
+<body >
+        <!-- Script for Menu Toggle -->
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('nav-links');
+                const menuIcon = document.getElementById('menu-icon');
+      
+                // Toggle the menu visibility
+                navLinks.classList.toggle('top-[100%]');
+      
+                // Toggle the menu icon (hamburger/cross)
+                if (navLinks.classList.contains('top-[100%]')) {
+                    menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+                } else {
+                    menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>';
+                }
+            }
+        </script>
+    <!-- Navbar -->
+    <header class="bg-white z-0 relative">
+        <nav class="flex justify-between mx-auto p-2 md:w-full ">
+            <!-- Logo -->
+            <a href="/">
+                <img src="/image/nepal digital economic summit.webp" class=" w-16 rounded-full cursor-pointer" alt="Conference Logo">
+            </a>
+
+            <!-- Nav Links -->
+            <div id="nav-links" class="nav-links duration-200 -z-40 md:z-auto md:static  absolute bg-white md:left-auto left-0 top-[-400%] w-full md:w-auto flex md:mr-0 px-5 md:ml-30 rounded-sm md:rounded-none ">
+                <ul class="ml-14 flex gap-8 my-3 flex-col items-center  md:flex-row  md:mx-8 md:text-justify md:ml-5">
+                    <li><a class="hover:text-green-500 mt-0 " href="./committees.html">Committees</a></li>
+                    <li><a class="hover:text-green-500" href="./schedule.html">Schedule</a></li>
+                    <li><a class="hover:text-green-500" href="./venue.html">Venue</a></li>
+                    <li><a class="hover:text-green-500" href="./speakers.html">Speakers</a></li>
+                    <li><a class="hover:text-green-500" href="./downloads.html">Downloads</a></li>
+                    <li><a class="hover:text-green-600" href="./contacts.html">Contact</a></li>
+                </ul>
+                
+                <div class="my-3 flex flex-col md:flex-row gap-4 ml-auto md:h-12 md:pt-1 ">
+                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoOxKVgm8cIjIombUdAD6IR61xQkY-3rtIToHApriWyfYKhQ/viewform?usp=pp_url" target="_blank">
+                     <button class="bg-lime-600  hover:bg-lime-700 duration-100  text-white font-bold py-2 px-4 rounded-full  ">
+                      Register Here
+                    </button>
+                    
+                  </button>
+                </a>
+
+                <a href="./callForPaper.html">
+                    <button class="bg-blue-500 hover:bg-blue-700 duration-100 text-white font-bold py-2 px-4 rounded-full">
+                        Call for Paper
+                    </button>
+                </a>
+                  
+              </div>
+                </div>
+            </div>
+
+            <!-- Menu Button for Mobile -->
+            <button id="menu-button" class="ml-auto md:hidden p-2 focus:outline-none" onclick="toggleMenu()">
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+<!-- Footer -->
+<footer class="bg-gray-800 flex flex-col align-middle justify-center text-white">
+  <div class="founders-bar">
+    
+  <div class="flex flex-row justify-around flex-wrap  mt-6 text-gray-300">
+      
+      <div class="flex-col ">
+          <p class="text-2xl font-bold">Nepal Digital Association </p>
+          <p>Address: Sitapaila, Kathmandu</p>
+          <p>Contact: +977 981-3272728</p>
+          <p>Email: info@nepaldigitalassociation.org</p>
+          <a href="nepaldigitalassociation.org" class="underline hover:font-semibold" target="_blank">nepaldigitalassociation.org</a>
+          <p class="font-bold">Organizing-Comittee:</p>
+          <a href="committees.html" class="underline hover:font-semibold">Anil Verma</a><br>
+          <a href="committees.html" class="underline hover:font-semibold">Jagdish Rauniyar</a>
+      </div>
+      
+      <div class="flex-col ">
+          <p class="text-2xl font-bold">Innovative Circle </p>
+          <p>Address: Ekantakuna, Lalitpur</p>
+          <p>Contact: +977-1-5907220 </p>
+          <p>Email: info@icircle.com.np </p>
+          <p class="underline hover:font-semibold"><a href="icircle.com.np" target="_blank">icircle.com.np</a></p>
+          <p class="font-bold">Organizing-Comittee:</p>
+          <a href="committees.html" class="underline hover:font-semibold">Jeebanath Adhikari</a><br>
+      </div>
+      <div class="flex-col">
+        <p class="text-2xl font-bold">MaDRA </p>
+        <p>Address: Kusunti, Lalitpur</p>
+        <p>Contact: +977-1-5532496 </p>
+        <p>Email: mdra@mdra.com.np </p>
+        <a href="mdra.com.np" class="underline hover:font-semibold">mdra.com.np</a>
+        <p class="font-bold">Organizing-Comittee:</p>
+        <a href="committees.html" class="underline hover:font-semibold">Bijay Prasad Sharma</a><br>
+      
+    </div>
+      
+        <div class="flex-col">
+          <p class="text-2xl font-black ">Quick Links </p>
+          <p class="hover:font-semibold underline"><a href="registration.html">Registration</a></p>
+          <p class="hover:font-semibold underline"><a href="committees.html">Committees</a></p>
+          <p class="hover:font-semibold underline"><a href="schedule.html">Schedule</a></p>
+          <p class="hover:font-semibold underline"><a href="venue.html">Venue</a></p>
+          <p class="hover:font-semibold underline"><a href="speakers.html">Speakers</a></p>
+          <p class="hover:font-semibold underline"><a href="downloads.html">Downloads</a></p>
+          <p class="hover:font-semibold underline"><a href="contacts.html">Contacts</a></p>
+          </div>
+          <div id="flex-col">
+            <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3310.195339099425!2d85.2910717236506!3d27.70033564026086!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18609488cdb7%3A0x44edd8fc9a17af63!2sThe%20Soaltee%20Kathmandu!5e0!3m2!1sen!2snp!4v1721133863462!5m2!1sen!2snp"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    class="rounded-md h-64"
+  ></iframe>
+          </div>
+
+        
+
+
+  </div>
+  </div>
+<div class="bg-gray-900 container flex justify-between items-center min-w-full px-4 mt-5 py-7">
+    <p class="text-center text-sm">
+      @Digital Conference-2024, All Rights Reserved
+     <br> Website designed by <a href="https://www.linkedin.com/in/aditya-bhusal-979202202/">Aditya Bhusal</a>
+    </p>
+    <div class="bg-gray-900 flex space-x-4">
+      <a href="#" class="text-white hover:text-gray-400">
+        <i class="fab fa-facebook-f hover:text-[#116BFF]"></i>
+      </a>
+      <a href="#" class="text-white hover:text-gray-400">
+        <i class="fab fa-twitter hover:text-[#116BFF]"></i>
+      </a>
+      <a href="#" class="text-white hover:text-gray-400">
+        <i class="fab fa-google-plus-g hover:text-[#EA483B]"></i>
+      </a>
+      <a href="#" class="text-white hover:text-[#FF0909]">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
